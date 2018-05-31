@@ -7,7 +7,7 @@
     tools:context=".fragments.OrganizacaoFragment">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/orgEdNome"
         android:layout_width="350dp"
         android:layout_height="52dp"
         android:layout_marginEnd="8dp"
@@ -22,7 +22,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/orgEdEnd"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -33,10 +33,10 @@
         android:hint="Endereço"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/orgEdNome" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/orgEdTel"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -47,7 +47,7 @@
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4"
+        app:layout_constraintTop_toBottomOf="@+id/orgEdEnd"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -59,11 +59,11 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/colorPrimary"
-        android:text="Adicionar Pessoa"
+        android:text="Adicionar Organização"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/orgEdTel"
         tools:ignore="MissingConstraints" />
 
 

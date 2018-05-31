@@ -8,13 +8,11 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import com.example.benjamin.nativapps.entities.Pessoa
 import com.example.benjamin.nativapps.fragments.AtividadeFragment
 import com.example.benjamin.nativapps.fragments.NegocioFragment
 import com.example.benjamin.nativapps.fragments.OrganizacaoFragment
 import com.example.benjamin.nativapps.fragments.PessoaFragment
 import io.realm.Realm
-import io.realm.RealmConfiguration
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 
@@ -24,15 +22,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
-
-        Realm.init(this)
-
-        val config = RealmConfiguration.Builder()
-                .name("pessoa.realm").build()
-        val realm = Realm.getInstance(config)
-
-        realm.beginTransaction()
-        val pessoa = realm.createObject(Pessoa::class.java)
 
         supportFragmentManager.beginTransaction().replace(R.id.fragment,HomeFragment()).commit()
         fab.setOnClickListener { view ->
@@ -55,6 +44,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             super.onBackPressed()
         }
     }
+
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.

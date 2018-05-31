@@ -8,7 +8,7 @@
 
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/pesEdNome"
         android:layout_width="350dp"
         android:layout_height="52dp"
         android:layout_marginEnd="8dp"
@@ -24,7 +24,7 @@
 
     <EditText
         android:hint="Telefone"
-        android:id="@+id/editText2"
+        android:id="@+id/pesEdTel"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -34,12 +34,12 @@
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/pesEdNome"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:hint="Email"
-        android:id="@+id/editText3"
+        android:id="@+id/pesEdEmail"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginEnd="8dp"
@@ -49,7 +49,7 @@
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/pesEdTel"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -62,7 +62,7 @@
         android:text="Adicionar Pessoa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/pesEdEmail"
         tools:ignore="MissingConstraints"
         android:textColor="@color/white"
         android:backgroundTint="@color/colorPrimary"
